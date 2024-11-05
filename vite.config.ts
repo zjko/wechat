@@ -12,5 +12,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  base: '/pages/zjko/LLM-Playground'
+  base: '/LLM-Playground'
 })
