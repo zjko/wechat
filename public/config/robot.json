@@ -1,0 +1,135 @@
+{
+    "土间埋": {
+        "avatar": "/pages/zjko/LLM-Playground/avatar/土间埋.png",
+        "name": "土间埋",
+        "sayHi": "你好，我是小埋~",
+        "metaPrompts:": [
+            {
+                "content": "你是小埋",
+                "role": "system"
+            }
+        ],
+        "initChatRecord": []
+    },
+    "robot1": {
+        "avatar": "/pages/zjko/LLM-Playground/avatar/robot1.png",
+        "name": "robot1",
+        "sayHi": "robot1",
+        "metaPrompts:": [
+            {
+                "content": "robot1",
+                "role": "system"
+            }
+        ],
+        "initChatRecord": []
+    },
+    "robot2": {
+        "avatar": "/pages/zjko/LLM-Playground/avatar/robot2.png",
+        "name": "robot2",
+        "sayHi": "你好，我是小埋~",
+        "metaPrompts:": [
+            {
+                "content": "你是小埋",
+                "role": "system"
+            }
+        ],
+        "initChatRecord": []
+    },
+    "robot3": {
+        "avatar": "/pages/zjko/LLM-Playground/avatar/robot2.png",
+        "name": "robot2",
+        "sayHi": "你好，我是小埋~",
+        "metaPrompts:": [
+            {
+                "content": "你是小埋",
+                "role": "system"
+            }
+        ],
+        "initChatRecord": []
+    },
+    "robot4": {
+        "avatar": "/pages/zjko/LLM-Playground/avatar/robot2.png",
+        "name": "robot2",
+        "sayHi": "你好，我是小埋~",
+        "metaPrompts:": [
+            {
+                "content": "你是小埋",
+                "role": "system"
+            }
+        ],
+        "initChatRecord": []
+    },
+    "robot5": {
+        "avatar": "/pages/zjko/LLM-Playground/avatar/robot2.png",
+        "name": "robot2",
+        "sayHi": "你好，我是小埋~",
+        "metaPrompts:": [
+            {
+                "content": "你是小埋",
+                "role": "system"
+            }
+        ],
+        "initChatRecord": []
+    },
+    "robot6": {
+        "avatar": "/pages/zjko/LLM-Playground/avatar/robot2.png",
+        "name": "robot2",
+        "sayHi": "你好，我是小埋~",
+        "metaPrompts:": [
+            {
+                "content": "你是小埋",
+                "role": "system"
+            }
+        ],
+        "initChatRecord": []
+    },
+    "robot7": {
+        "avatar": "/pages/zjko/LLM-Playground/avatar/robot2.png",
+        "name": "robot2",
+        "sayHi": "你好，我是小埋~",
+        "metaPrompts:": [
+            {
+                "content": "你是小埋",
+                "role": "system"
+            }
+        ],
+        "initChatRecord": []
+    },
+    "robot8": {
+        "avatar": "/pages/zjko/LLM-Playground/avatar/robot2.png",
+        "name": "robot2",
+        "sayHi": "你好，我是小埋~",
+        "metaPrompts:": [
+            {
+                "content": "你是小埋",
+                "role": "system"
+            }
+        ],
+        "initChatRecord": []
+    },
+    "robot9": {
+        "avatar": "/pages/zjko/LLM-Playground/avatar/robot2.png",
+        "name": "robot2",
+        "sayHi": "你好，我是小埋~",
+        "metaPrompts:": [
+            {
+                "content": "你是小埋",
+                "role": "system"
+            }
+        ],
+        "initChatRecord": []
+    },
+    "robot10": {
+        "avatar": "/pages/zjko/LLM-Playground/avatar/robot2.png",
+        "name": "robot2",
+        "sayHi": "你好，我是小埋~",
+        "metaPrompts:": [
+            {
+                "content": "你是小埋",
+                "role": "system"
+            }
+        ],
+        "initChatRecord": []
+    }
+    
+}
