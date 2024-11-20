@@ -36,7 +36,7 @@
         "initChatRecord": []
     },
     "robot3": {
-        "avatar": "/LLM-Playground/avatar/robot2.png",
+        "avatar": "/LLM-Playground/avatar/robot3.png",
         "name": "robot2",
         "sayHi": "你好，我是小埋~",
         "metaPrompts:": [
@@ -48,79 +48,7 @@
         "initChatRecord": []
     },
     "robot4": {
-        "avatar": "/LLM-Playground/avatar/robot2.png",
-        "name": "robot2",
-        "sayHi": "你好，我是小埋~",
-        "metaPrompts:": [
-            {
-                "content": "你是小埋",
-                "role": "system"
-            }
-        ],
-        "initChatRecord": []
-    },
-    "robot5": {
-        "avatar": "/LLM-Playground/avatar/robot2.png",
-        "name": "robot2",
-        "sayHi": "你好，我是小埋~",
-        "metaPrompts:": [
-            {
-                "content": "你是小埋",
-                "role": "system"
-            }
-        ],
-        "initChatRecord": []
-    },
-    "robot6": {
-        "avatar": "/LLM-Playground/avatar/robot2.png",
-        "name": "robot2",
-        "sayHi": "你好，我是小埋~",
-        "metaPrompts:": [
-            {
-                "content": "你是小埋",
-                "role": "system"
-            }
-        ],
-        "initChatRecord": []
-    },
-    "robot7": {
-        "avatar": "/LLM-Playground/avatar/robot2.png",
-        "name": "robot2",
-        "sayHi": "你好，我是小埋~",
-        "metaPrompts:": [
-            {
-                "content": "你是小埋",
-                "role": "system"
-            }
-        ],
-        "initChatRecord": []
-    },
-    "robot8": {
-        "avatar": "/LLM-Playground/avatar/robot2.png",
-        "name": "robot2",
-        "sayHi": "你好，我是小埋~",
-        "metaPrompts:": [
-            {
-                "content": "你是小埋",
-                "role": "system"
-            }
-        ],
-        "initChatRecord": []
-    },
-    "robot9": {
-        "avatar": "/LLM-Playground/avatar/robot2.png",
-        "name": "robot2",
-        "sayHi": "你好，我是小埋~",
-        "metaPrompts:": [
-            {
-                "content": "你是小埋",
-                "role": "system"
-            }
-        ],
-        "initChatRecord": []
-    },
-    "robot10": {
-        "avatar": "/LLM-Playground/avatar/robot2.png",
+        "avatar": "/LLM-Playground/avatar/robot4.png",
         "name": "robot2",
         "sayHi": "你好，我是小埋~",
         "metaPrompts:": [
@@ -131,5 +59,4 @@
         ],
         "initChatRecord": []
     }
-    
 }

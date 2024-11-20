@@ -1,18 +1,19 @@
 <template>
     <div class="header">
         <div class="left item">
+            <img class="button" :src="BASE_URL + '/icon/back.svg'" alt="back" @click="store.back()" />
         </div>
         <div class="center item">
-            <div class="title">{{ store.view.headerText }}</div>
+            <div class="title">{{ store.view.chat.headerText }}</div>
         </div>
         <div class="right item">
-            <img class="button" :src="BASE_URL + '/icon/search.svg'" alt="search" />
-            <img class="button" :src="BASE_URL + '/icon/add.svg'" alt="add" />
+            <img class="button" :src="BASE_URL + '/icon/more.svg'" alt="more" />
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
+
 import { useStore } from '@/stores/store';
 const BASE_URL = import.meta.env.BASE_URL
 const store = useStore()
@@ -30,7 +31,6 @@ const store = useStore()
     width: 100%;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    background-color: #f0f0f0;
 }
 
 .item {
@@ -38,6 +38,8 @@ const store = useStore()
     text-align: center;
     display: flex;
     justify-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .item:nth-child(2) {
@@ -47,14 +49,13 @@ const store = useStore()
 .button {
     width: 20px;
     height: 20px;
-    padding-right: 10px;
 }
 .center {
     justify-content: center;
 }
 .right {
     justify-content: flex-end;
-    padding-right: 10px;
+
 }
 .title {
     font-size: 16px;

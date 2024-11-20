@@ -2,17 +2,14 @@
 import Header from '@/components/Header.vue'
 import Tabbar from '@/components/Tabbar.vue'
 import MessageList from '@/components/MessageList.vue'
-import BaseLine from '@/components/BaseLine.vue';
 </script>
 
 <template>
   <main>
     <Header />
     <Tabbar />
-    <MessageList class="container"/>
+    <MessageList />
     <!-- <BaseLine /> -->
   </main>
 </template>
-<style scoped>
-
-</style>
+<style scoped></style>

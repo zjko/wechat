@@ -10,7 +10,7 @@ export const useStore = defineStore('store', {
       "avatar": BASE_URL + '/avatar/me.svg'
     },
     contact: {} as any,
-    chatHistory: {},
+    chatHistory: {} as any,
     view: {
       tabarId: 0,
       headerText: "微信",
@@ -35,7 +35,15 @@ export const useStore = defineStore('store', {
           "path": "/me",
           "icon": BASE_URL + '/icon/me.svg'
         },
-      ]
+      ],
+      chat: {
+        contactId: "",
+        headerText: "",
+        showSendButton: false,
+        voiceMode: true,
+        inputText: "",
+        toBottom: null
+      }
     }
 
   }),
@@ -69,6 +77,42 @@ export const useStore = defineStore('store', {
         })
       })
       return contacts
+    },
+    openChatPage(contactId: string) {
+      this.view.chat.contactId = contactId
+      this.view.chat.headerText = this.contact[contactId].name
+      app.config.globalProperties.$router.push('/chat/index')
+    },
+    back() {
+      app.config.globalProperties.$router.back()
+    },
+    switchVoiceMode() {
+      if (this.view.chat.voiceMode) {
+        this.chatInput()
+      } else {
+        this.view.chat.showSendButton = false
+      }
+      this.view.chat.voiceMode = !this.view.chat.voiceMode
+
+    },
+    chatInput() {
+      console.log(this.view.chat.inputText)
+      if (this.view.chat.inputText.length > 0) {
+        this.view.chat.showSendButton = true
+      } else {
+        this.view.chat.showSendButton = false
+      }
+    },
+    chatKeyBoard(e: any) {
+      if (e.code == "Enter") {
+        this.sendInputMessage()
+      }
+    },
+    sendInputMessage() {
+
+    },
+    getChatHistory() : any[]{
+      return this.chatHistory[this.view.chat.contactId]
     }
   }
 })

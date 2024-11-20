@@ -1,7 +1,7 @@
 <template>
     <main>
         <div class="message-list">
-            <div class="message" v-for="msg in store.getContactList()" :key="msg.id">
+            <div class="message" v-for="msg in store.getContactList()" :key="msg.id" @click="store.openChatPage(msg.id)">
                 <div class="left">
                     <img class="avatar" :src="msg.avatar" alt="avatar">
                 </div>
@@ -18,7 +18,6 @@
 
 <script setup lang="ts">
 import { useStore } from '@/stores/store';
-const BASE_URL = import.meta.env.BASE_URL
 const store = useStore()
 console.log(store.getContactList())
 </script>
