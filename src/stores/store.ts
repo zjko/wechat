@@ -1,6 +1,9 @@
 
 import { defineStore } from 'pinia'
 import { app } from '@/main'
+import {MessageType, request} from '@/util/bigmodel'
+import { v4 as uuidv4 } from 'uuid';
+import { nextTick } from 'vue';
 
 const BASE_URL = import.meta.env.BASE_URL
 export const useStore = defineStore('store', {
@@ -108,7 +111,39 @@ export const useStore = defineStore('store', {
         this.sendInputMessage()
       }
     },
+    setChatContainerToBottom(toBottom: ()=>void) {
+      // @ts-ignore
+      this.view.chat.toBottom = toBottom
+    },
     sendInputMessage() {
+        console.log(this.view.chat.inputText)
+
+        // init 初始化聊天记录
+        if(!this.chatHistory[this.view.chat.contactId]) {
+          this.chatHistory[this.view.chat.contactId] = []
+        }
+
+        // step1 生成聊天记录
+        let msg = {
+          id: uuidv4(),
+          type: MessageType.TEXT,
+          content: this.view.chat.inputText,
+          isMe: true
+        }
+        this.chatHistory[this.view.chat.contactId].push(msg)
+
+        // step2 清空输入框
+        this.view.chat.inputText = ""
+        
+        
+        nextTick(() => {
+          // step3 滚动到底部
+          if(this.view.chat.toBottom) {
+            //@ts-ignore
+            this.view.chat.toBottom()
+          }
+        })
+        
 
     },
     getChatHistory() : any[]{

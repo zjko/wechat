@@ -10,6 +10,7 @@
             }
         ],
         "initChatRecord": []
+        
     },
     "robot1": {
         "avatar": "/LLM-Playground/avatar/robot1.png",

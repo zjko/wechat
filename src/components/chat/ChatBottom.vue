@@ -14,8 +14,6 @@
             <div class="send-button" v-if="store.view.chat.showSendButton" @click="store.sendInputMessage()">发送</div>
             <img class="img" v-else :src="BASE_URL + '/icon/add.svg'" alt="add" />
         </div>
-
-
     </div>
 </template>
 
